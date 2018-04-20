@@ -10,6 +10,7 @@ def create_project_hash
     titie = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {}
   end
+  project
 end
 
 #projects: kickstarter.css("li.project.grid_4").first
